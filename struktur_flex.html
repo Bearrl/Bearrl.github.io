@@ -6,12 +6,14 @@
   <title>Struktur HTML & CSS Flex</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
     }
 
     header, footer {
+        border: black 2px solid;
+        border-radius: 10px;
       background-color: #75b1ff;
       text-align: center;
       padding: 20px;
@@ -20,7 +22,7 @@
 
     .container {
       display: flex;
-      padding: 20px;
+      flex-direction: column;
     }
 
     nav {
@@ -34,6 +36,9 @@
     }
 
     main {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
       width: 80%;
       padding-left: 20px;
     }
@@ -60,7 +65,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main> 
       <section class="article">
         <strong>Park Sunghoon</strong><br>
         <small>Cowo Mantepku</small>
