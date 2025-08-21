@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Struktur HTML & CSS Flex</title>
+  <title>Struktur HTML & CSS</title>
   <style>
     body {
       font-family: sans-serif;
-      margin: 20%;
+      margin: 0;
+      padding: 0;
     }
 
-    header {
-        border: black 2px solid;
-        border-radius: 10px;
-      background-color: #75b1ff;
+    header, footer {
+      background-color: #145a6d;
+      border-radius: 10px;
       text-align: center;
       padding: 20px;
-      margin-bottom: 10px;
+      font-weight: bold;
     }
 
     .container {
       display: flex;
-      flex-direction: column;
+      padding: 20px;
     }
 
     nav {
-      width: 200%;
-      background-color: #5bbdff;
-      padding: 15px;
+      border-radius: 10px;
+      width: 20%;
+      background-color: #492366;
+      padding: 10px;
+      text-align: center;
     }
 
     nav h3 {
@@ -35,23 +37,17 @@
     }
 
     main {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 10px;
+      width: 80%;
+      padding-left: 20px;
     }
 
     .article {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        flex-grow: 1;
-      background-color: #5fb8fd;
-    }
-
-    .footer {
-        background-color: #75b1ff;
-        padding: 15px;
-        text-align: center;
+      border: 1px solid #0c7165;
+      background-color: #25455e;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 15px;
     }
   </style>
 </head>
@@ -62,13 +58,13 @@
     <nav>
       <h3>Contoh cowo cakep</h3>
       <ul>
-       <p><a href="https://tinyurl.com/enSunghoon">Park Sunghoon</a></p>
-        <p><a href="https://tinyurl.com/KipukaQiu">Qiu Qiu</a></p>
-        <p><a href="https://tinyurl.com/EliotHuang">Eliot Huang</a></p>
-        </ul>
+        <a href="https://tinyurl.com/ParkSunghoon">Park Sunghoon</a><br>
+        <a href="https://tinyurl.com/QiuQiu">Qiu Qiu</a><br>
+        <a href="https://tinyurl.com/EliotHuang">Eliot Huang</a><br>
+      </ul>
     </nav>
 
-    <main> 
+    <main>
       <section class="article">
         <strong>Park Sunghoon</strong><br>
         <small>Cowo Mantepku</small>
